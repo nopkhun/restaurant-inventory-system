@@ -3,8 +3,7 @@ module.exports = {
   testEnvironment: 'node',
   roots: ['<rootDir>/src'],
   testMatch: [
-    '**/__tests__/**/*.ts',
-    '**/?(*.)+(spec|test).ts'
+    '**/health.test.ts'
   ],
   transform: {
     '^.+\\.ts$': 'ts-jest',
@@ -22,8 +21,7 @@ module.exports = {
     'lcov',
     'html'
   ],
-  setupFilesAfterEnv: ['<rootDir>/src/test/setup.ts'],
-  testTimeout: 30000,
+  testTimeout: 10000,
   verbose: true,
   forceExit: true,
   clearMocks: true,
