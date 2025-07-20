@@ -40,6 +40,8 @@ jobs:
       run: |
         cd backend
         npm test
+      env:
+        NODE_ENV: test
     
     - name: Run Frontend Tests
       run: |
