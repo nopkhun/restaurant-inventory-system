@@ -63,10 +63,10 @@ nano .env  # Update with production values
 ### GitHub Actions CI/CD Setup
 
 1. **Add Repository Secrets**
-   - `HOST`: Your server IP address
-   - `USERNAME`: SSH username
-   - `SSH_KEY`: Private SSH key
-   - `PORT`: SSH port (default: 22)
+   - `HOST`: `145.79.15.213` (your server IP)
+   - `USERNAME`: `root`
+   - `SSH_KEY`: (your private SSH key from ~/.ssh/id_rsa)
+   - `PORT`: `22`
 
 2. **Server SSH Setup**
 ```bash

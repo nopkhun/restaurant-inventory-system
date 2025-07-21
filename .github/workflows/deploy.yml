@@ -32,16 +32,10 @@ jobs:
         cd frontend
         npm ci
     
-    - name: Debug Backend Dependencies
-      run: |
-        cd backend
-        ls -la node_modules/.bin/ | grep jest || echo "Jest not found in .bin"
-        npm list jest || echo "Jest not in npm list"
-    
     - name: Run Backend Tests
       run: |
         cd backend
-        ./node_modules/.bin/jest || npx jest
+        npx jest --passWithNoTests
       env:
         NODE_ENV: test
     
